@@ -66,7 +66,7 @@ def poland():
     return(cases_per_one_mil)
 
 def italy():
-    citizens = 60,36
+    citizens = 60.36
     response = requests.get("https://api.covid19api.com/total/country/italy")
     json_response = response.json()
     latest_info = json_response[-1]['Confirmed']
@@ -93,7 +93,7 @@ def macedonia():
     citizens = 2.077
     response = requests.get("https://api.covid19api.com/total/country/macedonia")
     json_response = response.json()
-    latest_info = json_response[-1]['Confirmed']
+    latest_info = json_response[-2]['Confirmed']
     cases_per_one_mil = float(latest_info)/float(citizens)
     return(cases_per_one_mil)
 

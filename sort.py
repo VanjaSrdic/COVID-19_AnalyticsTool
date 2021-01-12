@@ -1,4 +1,5 @@
 import countries
+import numpy as np
 
 croatia = countries.croatia()
 norway = countries.norway()
@@ -23,3 +24,15 @@ switzerland = countries.switzerland()
 belgium = countries.belgium()
 slovenia = countries.slovenia()
 czechia = countries.czechia()
+
+countries_array = [croatia, norway, greece, albania, germany, denmark, hungary, poland, italy, slovakia, france, macedonia, austria, spain, united_kingdom, portugal, sweden, netherlands, serbia, switzerland, belgium, slovenia, czechia]
+
+def sort(to_sort):
+    for i in range(len(to_sort)):
+        swap = i + np.argmin(to_sort[i:]) 
+        (to_sort[i], to_sort[swap]) = (to_sort[swap], to_sort[i])
+    return(to_sort)
+
+sort_result = sort(countries_array)
+
+print(sort_result)
