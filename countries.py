@@ -1,6 +1,6 @@
 import requests
 import json
-
+import time
 
 
 #def istria(istra):
@@ -190,26 +190,3 @@ def czechia():
     cases_per_one_mil = float(latest_info)/float(citizens)
     return(cases_per_one_mil)
 
-print(croatia())
-norway()
-greece()
-albania()
-germany()
-denmark()
-hungary()
-poland()
-italy()
-slovakia()
-print(france())
-macedonia()
-austria()
-spain()
-united_kingdom()
-portugal()
-sweden()
-netherlands()
-serbia()
-switzerland()
-belgium()
-slovenia()
-czechia()
