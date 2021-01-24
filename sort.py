@@ -2,6 +2,7 @@ import countries
 import numpy as np
 import requests
 import json
+import time
 
 #istra = input("input istria: ")
 
@@ -16,6 +17,7 @@ hungary = countries.hungary()
 poland = countries.poland()
 italy = countries.italy()
 slovakia = countries.slovakia()
+time.sleep(5)
 france = countries.france()
 macedonia = countries.macedonia()
 austria = countries.austria()
@@ -26,6 +28,7 @@ sweden = countries.sweden()
 netherlands = countries.netherlands()
 serbia = countries.serbia()
 switzerland = countries.switzerland()
+time.sleep(5)
 belgium = countries.belgium()
 slovenia = countries.slovenia()
 czechia = countries.czechia()
@@ -41,5 +44,7 @@ def sort(to_sort):
 sort_result = sort(countries_array)
 
 print(sort_result)
+
+#print(sort_result)
 
 
