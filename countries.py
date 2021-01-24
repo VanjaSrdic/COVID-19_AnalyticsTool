@@ -1,6 +1,11 @@
 import requests
 import json
 
+
+
+#def istria(istra):
+   # return(istra)
+
 def croatia():
     citizens = 4.058
     response = requests.get("https://api.covid19api.com/total/country/croatia")
@@ -93,7 +98,7 @@ def macedonia():
     citizens = 2.077
     response = requests.get("https://api.covid19api.com/total/country/macedonia")
     json_response = response.json()
-    latest_info = json_response[-2]['Confirmed']
+    latest_info = json_response[-1]['Confirmed']
     cases_per_one_mil = float(latest_info)/float(citizens)
     return(cases_per_one_mil)
 
@@ -184,3 +189,27 @@ def czechia():
     latest_info = json_response[-1]['Confirmed']
     cases_per_one_mil = float(latest_info)/float(citizens)
     return(cases_per_one_mil)
+
+print(croatia())
+norway()
+greece()
+albania()
+germany()
+denmark()
+hungary()
+poland()
+italy()
+slovakia()
+print(france())
+macedonia()
+austria()
+spain()
+united_kingdom()
+portugal()
+sweden()
+netherlands()
+serbia()
+switzerland()
+belgium()
+slovenia()
+czechia()

@@ -1,6 +1,11 @@
 import countries
 import numpy as np
+import requests
+import json
 
+#istra = input("input istria: ")
+
+#istria = countries.istria(istra)
 croatia = countries.croatia()
 norway = countries.norway()
 greece = countries.greece()
@@ -36,3 +41,5 @@ def sort(to_sort):
 sort_result = sort(countries_array)
 
 print(sort_result)
+
+
