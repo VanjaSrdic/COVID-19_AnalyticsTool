@@ -33,7 +33,7 @@ belgium = countries.belgium()
 slovenia = countries.slovenia()
 czechia = countries.czechia()
 
-countries_array = [croatia, norway, greece, albania, germany, denmark, hungary, poland, italy, slovakia, france, macedonia, austria, spain, united_kingdom, portugal, sweden, netherlands, serbia, switzerland, belgium, slovenia, czechia]
+#countries_array = [croatia, norway, greece, albania, germany, denmark, hungary, poland, italy, slovakia, france, macedonia, austria, spain, united_kingdom, portugal, sweden, netherlands, serbia, switzerland, belgium, slovenia, czechia]
 
 def sort(to_sort):
     for i in range(len(to_sort)):
@@ -41,10 +41,18 @@ def sort(to_sort):
         (to_sort[i], to_sort[swap]) = (to_sort[swap], to_sort[i])
     return(to_sort)
 
-sort_result = sort(countries_array)
-
-print(sort_result)
-
-#print(sort_result)
 
 
+lis = [{ "ime" : "Hrvatska", "cases" : croatia}, 
+{ "ime" : "Albania", "cases" : albania },
+{ "ime" : "Norway", "cases" : norway },
+{ "ime" : "Greece", "cases" : greece },
+{ "ime" : "Germany", "cases" : germany },
+{ "ime" : "Albania", "cases" : albania },
+{ "ime" : "France" , "cases" : france }]
+ 
+# using sorted and lambda to print list sorted
+# by age 
+print("The list printed sorting by age: ")
+print(sorted(lis, key = lambda i: i['cases']))
+ 
