@@ -43,16 +43,34 @@ def sort(to_sort):
 
 
 
-lis = [{ "ime" : "Hrvatska", "cases" : croatia}, 
-{ "ime" : "Albania", "cases" : albania },
-{ "ime" : "Norway", "cases" : norway },
-{ "ime" : "Greece", "cases" : greece },
-{ "ime" : "Germany", "cases" : germany },
-{ "ime" : "Albania", "cases" : albania },
-{ "ime" : "France" , "cases" : france }]
+lis = [{ "name" : "Croatia", "cases" : croatia}, 
+{ "name" : "Albania", "cases" : albania },
+{ "name" : "Norway", "cases" : norway },
+{ "name" : "Greece", "cases" : greece },
+{ "name" : "Germany", "cases" : germany },
+{ "name" : "Albania", "cases" : albania },
+{ "name" : "France" , "cases" : france },
+{ "name" : "Denmark" , "cases" : denmark },
+{ "name" : "Hungary" , "cases" : hungary },
+{ "name" : "Poland" , "cases" : poland },
+{ "name" : "Italy" , "cases" : italy },
+{ "name" : "Slovakia" , "cases" : slovakia },
+{ "name" : "Macedonia" , "cases" : macedonia },
+{ "name" : "Austria" , "cases" : austria },
+{ "name" : "Spain" , "cases" : spain },
+{ "name" : "United Kingdom" , "cases" : united_kingdom },
+{ "name" : "Portugal" , "cases" : portugal },
+{ "name" : "Sweden" , "cases" : sweden },
+{ "name" : "Netherlands" , "cases" : netherlands },
+{ "name" : "Serbia" , "cases" : serbia },
+{ "name" : "Switzerland" , "cases" : switzerland },
+{ "name" : "Belgium" , "cases" : belgium },
+{ "name" : "Slovenia" , "cases" : slovenia},
+{ "name" : "Czechia" , "cases" : czechia },]
+
  
 # using sorted and lambda to print list sorted
 # by age 
-print("The list printed sorting by age: ")
-print(sorted(lis, key = lambda i: i['cases']))
+
+sorted = sorted(lis, key = lambda i: i['cases'])
  
