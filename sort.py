@@ -4,9 +4,7 @@ import requests
 import json
 import time
 
-#istra = input("input istria: ")
 
-#istria = countries.istria(istra)
 croatia = int(countries.croatia())
 norway = int(countries.norway())
 greece = int(countries.greece())

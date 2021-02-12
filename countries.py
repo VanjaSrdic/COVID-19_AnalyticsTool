@@ -3,8 +3,7 @@ import json
 import time
 
 
-#def istria(istra):
-   # return(istra)
+
 
 def croatia():
     citizens = 4.058
