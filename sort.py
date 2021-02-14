@@ -4,12 +4,13 @@ import requests
 import json
 import time
 
-
+worldwide = int(countries.worldwide())
 croatia = int(countries.croatia())
 norway = int(countries.norway())
 greece = int(countries.greece())
 albania = int(countries.albania())
 germany = int(countries.germany())
+time.sleep(5)
 denmark = int(countries.denmark())
 hungary = int(countries.hungary())
 poland = int(countries.poland())
@@ -30,6 +31,8 @@ time.sleep(5)
 belgium = int(countries.belgium())
 slovenia = int(countries.slovenia())
 czechia = int(countries.czechia())
+
+ukupno = [{ "name" : "Worldwide: ", "cases" : worldwide, "hrv" : "Cijeli svijet: ", "ger" : "Weltweit: ", "ita" :"Nel mondo: ", "slo" : "Po vsem svetu: "}] 
 
 lis = [
 { "name" : "Croatia: ", "cases" : croatia, "hrv" : "Hrvatska: ", "ger" : "Kroatien: ", "ita" :"Croazia: ", "slo" : "Hrvaška: "}, 

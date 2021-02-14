@@ -4,6 +4,13 @@ import time
 
 
 
+def worldwide():
+    citizens = 7594
+    response = requests.get("https://api.covid19api.com/summary")
+    json_response = response.json()
+    latest_info = json_response['Global']['TotalConfirmed']
+    cases_per_one_mil = float(latest_info)/float(citizens)
+    return(cases_per_one_mil)
 
 def croatia():
     citizens = 4.058
@@ -62,7 +69,7 @@ def hungary():
     return(cases_per_one_mil)
 
 def poland():
-    citizens = 9.77
+    citizens = 37.82
     response = requests.get("https://api.covid19api.com/total/country/poland")
     json_response = response.json()
     latest_info = json_response[-1]['Confirmed']
@@ -188,4 +195,7 @@ def czechia():
     latest_info = json_response[-1]['Confirmed']
     cases_per_one_mil = float(latest_info)/float(citizens)
     return(cases_per_one_mil)
+
+
+
 
