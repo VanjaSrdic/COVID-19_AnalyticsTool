@@ -3,7 +3,7 @@ import numpy as np
 import requests
 import json
 import time
-
+# putting api data inside variables 
 worldwide = int(countries.worldwide())
 croatia = int(countries.croatia())
 norway = int(countries.norway())
@@ -32,6 +32,7 @@ belgium = int(countries.belgium())
 slovenia = int(countries.slovenia())
 czechia = int(countries.czechia())
 
+# putting data in lists, so that I can fetch data and translations for the final sorted result
 ukupno = [{ "name" : "Worldwide: ", "cases" : worldwide, "hrv" : "Cijeli svijet: ", "ger" : "Weltweit: ", "ita" :"Nel mondo: ", "slo" : "Po vsem svetu: "}] 
 
 lis = [
@@ -59,6 +60,7 @@ lis = [
 { "name" : "Slovenia: " , "cases" : slovenia, "hrv" : "Slovenija: ", "ger" : "Slowenien: ", "ita" :"Slovenia: ", "slo" : "Slovenija: "},
 { "name" : "Czechia: " , "cases" : czechia, "hrv" : "Češka: ", "ger" : "Tschechien: ", "ita" :"Repubblica Ceca: ", "slo" : "Češka: " },]
 
+# sorting command
 sorted = sorted(lis, key = lambda i: i['cases'])
 
 

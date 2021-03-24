@@ -1,7 +1,7 @@
 import sort
 
 i = 0
-
+# fetching the right data and lnguage presets
 print(sort.ukupno[0]["hrv"], sort.ukupno[0]["cases"])
 while i < len(sort.sorted):
     print(sort.sorted[i]["hrv"], sort.sorted[i]["cases"])

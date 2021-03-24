@@ -3,7 +3,7 @@ import json
 import time
 
 
-
+# pulling data from the api
 def worldwide():
     citizens = 7594
     response = requests.get("https://api.covid19api.com/summary")
