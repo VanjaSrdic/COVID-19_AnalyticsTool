@@ -50,7 +50,7 @@ lis = [
 { "name" : "Macedonia: " , "cases" : macedonia, "hrv" : "Makedonija: ", "ger" : "Mazedonien: ", "ita" :"Macedonia: ", "slo" : "Makedonija: " },
 { "name" : "Austria: " , "cases" : austria, "hrv" : "Austrija: ", "ger" : "Österreich: ", "ita" :"Austria: ", "slo" : "Avstrija: " },
 { "name" : "Spain: " , "cases" : spain, "hrv" : "Španjolska: ", "ger" : "Spanien: ", "ita" :"Spagna: ", "slo" : "Španija: " },
-{ "name" : "United Kingdom: " , "cases" : united_kingdom, "hrv" : "Ujedinjeno Kraljevstvo: ", "ger" : "Združeno kraljestvo: ", "ita" :"Regno Unito: ", "slo" : "Združeno kraljestvo: " },
+{ "name" : "United Kingdom: " , "cases" : united_kingdom, "hrv" : "Ujedinjeno Kraljevstvo: ", "ger" : "Vereinigtes Königreich: ", "ita" :"Regno Unito: ", "slo" : "Združeno kraljestvo: " },
 { "name" : "Portugal: " , "cases" : portugal, "hrv" : "Portugal: ", "ger" : "Portugal: ", "ita" :"Portogallo: ", "slo" : "Portugalska: " },
 { "name" : "Sweden: " , "cases" : sweden, "hrv" : "Švedska: ", "ger" : "Schweden: ", "ita" :"Svezia: ", "slo" : "Švedska: " },
 { "name" : "Netherlands: " , "cases" : netherlands, "hrv" : "Nizozemska: ", "ger" : "Niederlande: ", "ita" :"Olanda: ", "slo" : "Nizozemska: " },
